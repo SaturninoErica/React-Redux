@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/* 🔥 ТЁМНАЯ ТЕМА */
+
+body.dark .navbar {
+    background-color: #111827;
+    border-bottom: 1px solid #2a2f45;
+}
+
+body.dark .logo {
+    color: #f3f4f6;
+}
+
+body.dark .nav-link {
+    color: #cbd5e1;
+}
+
+body.dark .nav-link:hover {
+    color: #ffffff;
+}

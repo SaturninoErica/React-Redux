@@ -1,23 +1,19 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from './features/counterSlice'
+import Header from "./components/Header";
 
 function App() {
-  const count = useSelector(state => state.counter.value)
-  const dispatch = useDispatch()
-
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Counter: {count}</h1>
+    <div>
+      <Header />
 
-      <button onClick={() => dispatch(increment())}>
-        +
-      </button>
-
-      <button onClick={() => dispatch(decrement())}>
-        -
-      </button>
+      <main style={{ padding: "40px" }}>
+        <h1>Добро пожаловать в ArtSphere</h1>
+        <p>
+          Информативный сайт о мире искусства: художники, стили,
+          направления и великие произведения.
+        </p>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

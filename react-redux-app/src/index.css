@@ -1,0 +1,85 @@
+/* Сброс и базовая модель коробки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Основной стиль страницы (СВЕТЛАЯ ТЕМА по умолчанию) */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Контейнер для контента */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* Параграфы */
+p {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* Ссылки */
+a {
+    color: inherit;
+}
+
+/* Кнопки (на будущее) */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== 🌙 ТЁМНАЯ ТЕМА ===== */
+
+body.dark {
+    background-color: #1e1e2f;
+    color: #e5e7eb;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #ffffff;
+}
+
+body.dark p {
+    color: #cbd5e1;
+}
+
+body.dark button {
+    background-color: #2c2f4a;
+    color: white;
+}
