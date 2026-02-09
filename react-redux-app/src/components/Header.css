@@ -2,50 +2,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 40px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 22px 50px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .nav {
     display: flex;
-    gap: 24px;
+    gap: 30px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #444;
-    font-size: 15px;
+    color: #333;
+    font-size: 16px;
     position: relative;
-    transition: color 0.2s ease;
+    padding-bottom: 4px;
 }
 
-.nav-link:hover {
-    color: #000;
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #bfa46f;
+    transition: width 0.3s ease;
 }
 
-/* 🔥 ТЁМНАЯ ТЕМА */
+.nav-link:hover::after {
+    width: 100%;
+}
 
+/* ТЁМНАЯ ТЕМА */
 body.dark .navbar {
-    background-color: #111827;
-    border-bottom: 1px solid #2a2f45;
-}
-
-body.dark .logo {
-    color: #f3f4f6;
+    background: rgba(22, 36, 71, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 body.dark .nav-link {
-    color: #cbd5e1;
-}
-
-body.dark .nav-link:hover {
-    color: #ffffff;
+    color: #eaeaea;
 }

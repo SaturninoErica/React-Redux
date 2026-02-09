@@ -1,0 +1,62 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "name": "Леонардо да Винчи",
+            "country": "Италия",
+            "years": "1452–1519",
+            "description": "Гений эпохи Возрождения, художник, учёный, инженер.",
+            "image": "https://i.ytimg.com/vi/LwwWv8V9eYg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgYChSMA8=&amp;rs=AOn4CLCsyUIy-jddiSCcjTnZig-JNhn6bw"
+        },
+        {
+            "id": 2,
+            "name": "Винсент ван Гог",
+            "country": "Нидерланды",
+            "years": "1853–1890",
+            "description": "Постимпрессионист, известный своими яркими цветами и эмоциональными мазками.",
+            "image": "https://www.newestmuseum.ru/data/photos/van_gog_photo/van_gog_v_gaage/4284_foto_1_03.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Клод Моне",
+            "country": "Франция",
+            "years": "1840–1926",
+            "description": "Один из основателей импрессионизма.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Claude_Monet_1899_Nadar.jpg/960px-Claude_Monet_1899_Nadar.jpg"
+        }
+    ],
+    "styles": [
+        {
+            "id": 1,
+            "name": "Импрессионизм",
+            "info": "Передача света и мгновенного впечатления."
+        },
+        {
+            "id": 2,
+            "name": "Барокко",
+            "info": "Драматизм, движение, контрасты света и тени."
+        },
+        {
+            "id": 3,
+            "name": "Сюрреализм",
+            "info": "Мир снов, подсознания и абсурда."
+        }
+    ],
+    "masterpieces": [
+        {
+            "id": 1,
+            "title": "Мона Лиза",
+            "author": "Леонардо да Винчи"
+        },
+        {
+            "id": 2,
+            "title": "Звёздная ночь",
+            "author": "Винсент ван Гог"
+        },
+        {
+            "id": 3,
+            "title": "Впечатление. Восход солнца",
+            "author": "Клод Моне"
+        }
+    ]
+}
