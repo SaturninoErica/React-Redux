@@ -7,6 +7,8 @@
     gap: 40px;
 }
 
+/* ===== LIST ===== */
+
 .artists-list {
     width: 30%;
     display: flex;
@@ -15,35 +17,137 @@
 }
 
 .artist-item {
-    padding: 12px 16px;
-    border-radius: 10px;
+    padding: 14px 18px;
+    border-radius: 12px;
     background: white;
     cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .artist-item:hover {
-    transform: translateX(6px);
+    transform: translateX(8px);
     background: #f3efe6;
 }
 
+.delete-btn {
+    float: right;
+    background: transparent;
+    color: crimson;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+/* ===== DETAIL CARD ===== */
+
 .artist-detail {
     width: 70%;
+    display: flex;
 }
 
-.artist-detail img {
-    margin-top: 15px;
-    max-width: 260px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.artist-view-card {
+    display: flex;
+    gap: 35px;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.4s ease;
 }
 
-/* Тёмная тема */
+.artist-image-wrapper {
+    min-width: 260px;
+}
+
+.artist-image {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.artist-info {
+    flex: 1;
+}
+
+.artist-name {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.artist-meta {
+    color: #bfa46f;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.artist-description {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* ===== FORM ===== */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+.edit-panel {
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+/* ===== DARK MODE ===== */
+
 body.dark .artist-item {
     background: #1f4068;
 }
 
 body.dark .artist-item:hover {
     background: #2a5298;
+}
+
+body.dark .artist-view-card {
+    background: #1f4068;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #162447;
+    color: white;
+    border: 1px solid #2a5298;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
