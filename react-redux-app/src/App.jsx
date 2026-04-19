@@ -6,6 +6,8 @@ import MasterpiecesSection from "./components/MasterpiecesSection";
 import Register from "./components/Register";
 import Login from "./components/Login";
 
+import ItemDetail from "./components/ItemDetail";
+
 function App() {
   return (
     <div>
@@ -15,11 +17,12 @@ function App() {
         <h1>Добро пожаловать в ArtSphere</h1>
         <p>Откройте для себя мир искусства, художников и великих произведений.</p>
 
-        <ArtistsSection />
-        <StylesSection />
-        <MasterpiecesSection />
         <Register />
         <Login />
+        <ArtistsSection />
+        <ItemDetail />
+        <StylesSection />
+        <MasterpiecesSection />
 
       </main>
     </div>
